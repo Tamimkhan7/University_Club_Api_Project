@@ -1,0 +1,16 @@
+# Visual Studio temporary files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.log
+
+# Node / npm (if any frontend)
+node_modules/
+dist/
+
+# Database / secrets
+*.mdf
+*.ldf
+appsettings.Development.json
