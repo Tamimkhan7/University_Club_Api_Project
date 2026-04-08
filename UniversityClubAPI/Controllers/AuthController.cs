@@ -26,7 +26,7 @@ namespace UniversityClubAPI.Controllers
             {
                 Name = dto.Name,
                 Email = dto.Email,
-                Password = dto.Password
+                Password = BCrypt.Net.BCrypt.HashPassword(dto.Password)
             };
 
             _context.Users.Add(user);
@@ -39,8 +39,11 @@ namespace UniversityClubAPI.Controllers
         [HttpPost("login")]
         public IActionResult Login(LoginDTO dto)
         {
-            var user = _context.Users.FirstOrDefault(x => x.Email == dto.Email && x.Password == dto.Password);
+            var user = _context.Users.FirstOrDefault(x => x.Email == dto.Email);
             if (user == null) return Unauthorized();
+
+            bool isPasswordValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
+            if ((!isPasswordValid)) return Unauthorized();
 
             var token = JwtHelper.GenerateToken(user.Email, _config);
             return Ok(token);
