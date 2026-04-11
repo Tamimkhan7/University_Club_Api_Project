@@ -32,6 +32,9 @@ namespace UniversityClubAPI.Controllers
         [HttpPut("modified/{clubId}")]
         public async Task<IActionResult> ModifiedClub(int clubId, [FromBody] Club updatedClub)
         {
+
+            if (updatedClub == null) return BadRequest("Club data is required");
+
             var club = await _context.Clubs.FirstOrDefaultAsync(c => c.Id == clubId);
             if (club == null)
                 return NotFound("Club not found");
@@ -39,8 +42,8 @@ namespace UniversityClubAPI.Controllers
             // Update fields
             club.Name = updatedClub.Name;
             club.Description = updatedClub.Description;
+            club.CreatedBy = updatedClub.CreatedBy;
 
-            _context.Clubs.Update(club);
             await _context.SaveChangesAsync();
 
             return Ok(club);
@@ -50,6 +53,7 @@ namespace UniversityClubAPI.Controllers
         [HttpDelete("delete/{clubId}")]
         public async Task<IActionResult> Delete(int clubId)
         {
+
             var club = await _context.Clubs.FirstOrDefaultAsync(c => c.Id == clubId);
             if (club == null)
                 return NotFound("Club not found");

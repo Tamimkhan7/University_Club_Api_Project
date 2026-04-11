@@ -33,6 +33,22 @@
   },
   {
     "ContainingType": "UniversityClubAPI.Controllers.ClubController",
+    "Method": "ModifiedMember",
+    "RelativePath": "api/Club/clubmembermodified",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "member",
+        "Type": "UniversityClubAPI.Models.ClubMember",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversityClubAPI.Controllers.ClubController",
     "Method": "Create",
     "RelativePath": "api/Club/create",
     "HttpMethod": "POST",
@@ -42,6 +58,116 @@
       {
         "Name": "club",
         "Type": "UniversityClubAPI.Models.Club",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversityClubAPI.Controllers.ClubController",
+    "Method": "Delete",
+    "RelativePath": "api/Club/delete/{clubId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clubId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversityClubAPI.Controllers.ClubController",
+    "Method": "Join",
+    "RelativePath": "api/Club/join",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "member",
+        "Type": "UniversityClubAPI.Models.ClubMember",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversityClubAPI.Controllers.ClubController",
+    "Method": "Leave",
+    "RelativePath": "api/Club/leave/{userId}/{clubId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clubId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversityClubAPI.Controllers.ClubController",
+    "Method": "ModifiedClub",
+    "RelativePath": "api/Club/modified/{clubId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clubId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedClub",
+        "Type": "UniversityClubAPI.Models.Club",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversityClubAPI.Controllers.UserController",
+    "Method": "DeleteProfile",
+    "RelativePath": "api/User/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversityClubAPI.Controllers.UserController",
+    "Method": "Profile",
+    "RelativePath": "api/User/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversityClubAPI.Controllers.UserController",
+    "Method": "Update",
+    "RelativePath": "api/User/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "UniversityClubAPI.Models.User",
         "IsRequired": true
       }
     ],

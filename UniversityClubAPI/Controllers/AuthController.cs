@@ -45,7 +45,7 @@ namespace UniversityClubAPI.Controllers
             bool isPasswordValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
             if ((!isPasswordValid)) return Unauthorized();
 
-            var token = JwtHelper.GenerateToken(user.Email, _config);
+            var token = JwtHelper.GenerateToken(user.Email, user.Role, _config);
             return Ok(token);
 
         }

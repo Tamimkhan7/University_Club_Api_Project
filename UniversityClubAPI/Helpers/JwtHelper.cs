@@ -5,11 +5,12 @@ using System.Text;
 
 public class JwtHelper
 {
-    public static string GenerateToken(string email, IConfiguration config)
+    public static string GenerateToken(string email, string role, IConfiguration config)
     {
         var claims = new[]
         {
-            new Claim(ClaimTypes.Email,email)
+            new Claim(ClaimTypes.Email,email),
+            new Claim(ClaimTypes.Role, role)
         };
 
         var key = new SymmetricSecurityKey(

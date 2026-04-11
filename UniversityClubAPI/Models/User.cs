@@ -14,10 +14,12 @@ namespace UniversityClubAPI.Models
         public string Email { get; set; }
         [Required]
         public string Password { get; set; }
-        public string Bio { get; set; }
-        public string ProfileImage { get; set; }
 
-        public string Department { get; set; }
+        public string Role { get; set; } = "User"; //default role is user
+        public string? Bio { get; set; }
+        public string? ProfileImage { get; set; }
+
+        public string? Department { get; set; }
         public string Batch { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
