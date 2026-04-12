@@ -9,7 +9,6 @@ namespace UniversityClubAPI.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-
         private readonly AppDbContext _context;
         private readonly IConfiguration _config;
 
@@ -22,6 +21,10 @@ namespace UniversityClubAPI.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterDTO dto)
         {
+            var exists = _context.Users.FirstOrDefault(x => x.Email == dto.Email);
+            if (exists != null)
+                return BadRequest("Email already exists");
+
             var user = new User
             {
                 Name = dto.Name,
@@ -35,21 +38,19 @@ namespace UniversityClubAPI.Controllers
             return Ok(user);
         }
 
-
         [HttpPost("login")]
         public IActionResult Login(LoginDTO dto)
         {
             var user = _context.Users.FirstOrDefault(x => x.Email == dto.Email);
             if (user == null) return Unauthorized();
 
-            bool isPasswordValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
-            if ((!isPasswordValid)) return Unauthorized();
+            bool valid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
+
+            if (!valid) return Unauthorized();
 
             var token = JwtHelper.GenerateToken(user.Email, user.Role, _config);
-            return Ok(token);
 
+            return Ok(token);
         }
     }
 }
-
-

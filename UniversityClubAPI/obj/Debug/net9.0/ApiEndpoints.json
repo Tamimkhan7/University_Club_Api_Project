@@ -33,18 +33,12 @@
   },
   {
     "ContainingType": "UniversityClubAPI.Controllers.ClubController",
-    "Method": "ModifiedMember",
-    "RelativePath": "api/Club/clubmembermodified",
-    "HttpMethod": "PUT",
+    "Method": "GetAll",
+    "RelativePath": "api/Club/all",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "member",
-        "Type": "UniversityClubAPI.Models.ClubMember",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -56,8 +50,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "club",
-        "Type": "UniversityClubAPI.Models.Club",
+        "Name": "dto",
+        "Type": "UniversityClubAPI.DTOs.CreateClubDTO",
         "IsRequired": true
       }
     ],
@@ -66,13 +60,13 @@
   {
     "ContainingType": "UniversityClubAPI.Controllers.ClubController",
     "Method": "Delete",
-    "RelativePath": "api/Club/delete/{clubId}",
+    "RelativePath": "api/Club/delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "clubId",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -88,8 +82,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "member",
-        "Type": "UniversityClubAPI.Models.ClubMember",
+        "Name": "dto",
+        "Type": "UniversityClubAPI.DTOs.JoinClubDTO",
         "IsRequired": true
       }
     ],
@@ -98,16 +92,11 @@
   {
     "ContainingType": "UniversityClubAPI.Controllers.ClubController",
     "Method": "Leave",
-    "RelativePath": "api/Club/leave/{userId}/{clubId}",
+    "RelativePath": "api/Club/leave/{clubId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
       {
         "Name": "clubId",
         "Type": "System.Int32",
@@ -118,20 +107,20 @@
   },
   {
     "ContainingType": "UniversityClubAPI.Controllers.ClubController",
-    "Method": "ModifiedClub",
-    "RelativePath": "api/Club/modified/{clubId}",
+    "Method": "Update",
+    "RelativePath": "api/Club/update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "clubId",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "updatedClub",
-        "Type": "UniversityClubAPI.Models.Club",
+        "Name": "dto",
+        "Type": "UniversityClubAPI.DTOs.CreateClubDTO",
         "IsRequired": true
       }
     ],
@@ -167,7 +156,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "UniversityClubAPI.Models.User",
+        "Type": "UniversityClubAPI.DTOs.UpdateUserDTO",
         "IsRequired": true
       }
     ],
