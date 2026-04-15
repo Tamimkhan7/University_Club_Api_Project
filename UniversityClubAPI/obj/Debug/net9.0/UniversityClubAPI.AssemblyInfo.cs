@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniversityClubAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9132606138169040e45c5166ba6d36704c185b36")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45b4c6d408399c5db40cd32421dbf043254fff21")]
 [assembly: System.Reflection.AssemblyProductAttribute("UniversityClubAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniversityClubAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
