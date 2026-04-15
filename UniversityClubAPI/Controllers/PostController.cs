@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using UniversityClubAPI.Data;
+using UniversityClubAPI.DTOs;
 using UniversityClubAPI.Models;
 
 namespace UniversityClubAPI.Controllers
@@ -18,33 +20,40 @@ namespace UniversityClubAPI.Controllers
 
         [Authorize]
         [HttpPost("create")]
-        public async Task<IActionResult> Create(Post post)
+        public async Task<IActionResult> Create(CreatePostDto dto)
         {
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
             var user = _context.Users.FirstOrDefault(x => x.Email == email);
             if (user == null) return Unauthorized();
 
-            post.UserId = user.Id;
-            post.CreatedAt = DateTime.UtcNow;
+            var post = new Post
+            {
+                Content = dto.Content,
+                ImageUrl = dto.ImageUrl,
+                ClubId = dto.ClubId,
+                UserId = user.Id
+            };
 
             _context.Posts.Add(post);
             await _context.SaveChangesAsync();
+
             return Ok(post);
         }
 
         [Authorize]
         [HttpPut("update/{id}")]
-        public async Task<IActionResult> Update(int id, Post updatedPost)
+        public async Task<IActionResult> Update(int id, UpdatePostDto dto)
         {
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
-            var user = _context.Users.FirstOrDefault(x => x.Email == email);
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
             if (user == null) return Unauthorized();
 
-            var post = _context.Posts.FirstOrDefault(x => x.Id == id && x.UserId == user.Id);
+            var post = await _context.Posts.FirstOrDefaultAsync(x => x.Id == id && x.UserId == user.Id);
             if (post == null) return NotFound("Post not found"); //send custome message
 
-            post.Content = updatedPost.Content;
-            post.ImageUrl = updatedPost.ImageUrl;
+
+            post.Content = dto.Content;
+            post.ImageUrl = dto.ImageUrl;
             post.UpdatedAt = DateTime.UtcNow;
 
             await _context.SaveChangesAsync();
@@ -68,46 +77,46 @@ namespace UniversityClubAPI.Controllers
         }
 
         [HttpGet("all")]
-        public IActionResult All()
+        public async Task<IActionResult> All()
         {
-            var posts = _context.Posts.OrderByDescending(x => x.CreatedAt).ToList();
+            var posts = _context.Posts
+                .Include(x => x.User)
+                .Include(x => x.Comments)
+                .Include(x => x.Reactions)
+                .OrderByDescending(x => x.CreatedAt)
+                .Select(p => new PostResponseDto
+                {
+                    Id = p.Id,
+                    Content = p.Content,
+                    ImageUrl = p.ImageUrl,
+                    CreatedAt = p.CreatedAt,
+                    UserName = p.User.Name,
+                    UserImage = p.User.ProfileImage,
+                    CommentCount = p.Comments.Count,
+                    ReactionCount = p.Reactions.Count
+                }).ToList();
+
             return Ok(posts);
         }
 
         [Authorize]
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
             var user = _context.Users.FirstOrDefault(x => x.Email == email);
             if (user == null) return Unauthorized();
 
-            var post = _context.Posts.FirstOrDefault(x => x.Id == id);
+            //var post = _context.Posts.FirstOrDefault(x => x.Id == id);
+            var post = await _context.Posts
+                .Include(x => x.User)
+                .Include(x => x.Comments)
+                .Include(x => x.Reactions)
+                .FirstOrDefaultAsync(x => x.Id == id);
             if (post == null) return NotFound();
             return Ok(post);
         }
 
-        [HttpGet("feed")]
-        public IActionResult Feed()
-        {
-            var feed = _context.Posts.OrderByDescending(x => x.CreatedAt).Select(p => new
-            {
-                p.Id,
-                p.Content,
-                p.ImageUrl,
-                p.CreatedAt,
 
-                User = _context.Users.Where(u => u.Id == p.UserId).Select(u => new
-                {
-                    u.Name,
-                    u.ProfileImage
-                }).FirstOrDefault(),
-
-                CommentCount = _context.Comments.Count(c => c.PostId == p.Id),
-                ReactionCount = _context.Reactions.Count(r => r.PostId == p.Id)
-            }).ToList();
-
-            return Ok(feed);
-        }
     }
 }

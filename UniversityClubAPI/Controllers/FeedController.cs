@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using UniversityClubAPI.Data;
+using UniversityClubAPI.DTOs;
 
 namespace UniversityClubAPI.Controllers
 {
@@ -23,18 +24,16 @@ namespace UniversityClubAPI.Controllers
                 .Include(x => x.Comments)
                 .Include(x => x.Reactions)
                 .OrderByDescending(x => x.CreatedAt)
-                .Select(p => new
+                .Select(p => new FeedDto
                 {
-                    p.Id,
-                    p.Content,
-                    p.ImageUrl,
-                    p.CreatedAt,
+                    Id = p.Id,
+                    Content = p.Content,
+                    ImageUrl = p.ImageUrl,
+                    CreatedAt = p.CreatedAt,
 
-                    User = new
-                    {
-                        p.User.Name,
-                        p.User.ProfileImage
-                    },
+
+                    UserName = p.User.Name,
+                    UserImage = p.User.ProfileImage,
 
                     CommentCount = p.Comments.Count,
                     ReactionCount = p.Reactions.Count
