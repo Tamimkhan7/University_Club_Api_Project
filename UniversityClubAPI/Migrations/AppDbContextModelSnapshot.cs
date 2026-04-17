@@ -80,7 +80,6 @@ namespace UniversityClubAPI.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Content")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
@@ -118,14 +117,12 @@ namespace UniversityClubAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Content")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -157,9 +154,8 @@ namespace UniversityClubAPI.Migrations
                     b.Property<int>("PostId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -182,7 +178,6 @@ namespace UniversityClubAPI.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Batch")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Bio")
@@ -231,7 +226,7 @@ namespace UniversityClubAPI.Migrations
                         .IsRequired();
 
                     b.HasOne("UniversityClubAPI.Models.User", "User")
-                        .WithMany()
+                        .WithMany("Comments")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -252,7 +247,7 @@ namespace UniversityClubAPI.Migrations
                         .IsRequired();
 
                     b.HasOne("UniversityClubAPI.Models.User", "User")
-                        .WithMany()
+                        .WithMany("Posts")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -271,7 +266,7 @@ namespace UniversityClubAPI.Migrations
                         .IsRequired();
 
                     b.HasOne("UniversityClubAPI.Models.User", "User")
-                        .WithMany()
+                        .WithMany("Reactions")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -289,6 +284,15 @@ namespace UniversityClubAPI.Migrations
             modelBuilder.Entity("UniversityClubAPI.Models.Post", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("Reactions");
+                });
+
+            modelBuilder.Entity("UniversityClubAPI.Models.User", b =>
+                {
+                    b.Navigation("Comments");
+
+                    b.Navigation("Posts");
 
                     b.Navigation("Reactions");
                 });

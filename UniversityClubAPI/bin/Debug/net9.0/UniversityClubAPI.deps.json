@@ -11,7 +11,8 @@
           "BCrypt.Net-Next": "4.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
+          "NEST": "7.17.5"
         },
         "runtime": {
           "UniversityClubAPI.dll": {}
@@ -49,6 +50,14 @@
           "lib/netstandard2.1/BCrypt.Net-Next.dll": {
             "assemblyVersion": "4.1.0.0",
             "fileVersion": "4.1.0.0"
+          }
+        }
+      },
+      "Elasticsearch.Net/7.17.5": {
+        "runtime": {
+          "lib/netstandard2.1/Elasticsearch.Net.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.17.5.0"
           }
         }
       },
@@ -601,6 +610,17 @@
           }
         }
       },
+      "NEST/7.17.5": {
+        "dependencies": {
+          "Elasticsearch.Net": "7.17.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nest.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.17.5.0"
+          }
+        }
+      },
       "System.ClientModel/1.0.0": {
         "dependencies": {
           "System.Memory.Data": "1.0.2"
@@ -831,6 +851,13 @@
       "path": "bcrypt.net-next/4.1.0",
       "hashPath": "bcrypt.net-next.4.1.0.nupkg.sha512"
     },
+    "Elasticsearch.Net/7.17.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-orChsQi1Ceho/NyIylNOn6y4vuGcsbCfMZnCueNN0fzqYEGQmQdPfcVmsR5+3fwpXTgxCdjTUVmqOwvHpCSB+Q==",
+      "path": "elasticsearch.net/7.17.5",
+      "hashPath": "elasticsearch.net.7.17.5.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
@@ -1026,6 +1053,13 @@
       "sha512": "sha512-YqueG52R/Xej4VVbKuRIodjiAhV0HR/XVbLbNrJhCZnzjnSjgMJ/dCdV0akQQxavX6hp/LC6rqLGLcXeQYU7XA==",
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
+    },
+    "NEST/7.17.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bo9UyuIoVRx4IUQiuC8ZrlZuvAXKIccernC7UUKukQCEmRq2eVIk+gubHlnMQljrP51q0mN4cjgy9vv5uZPkoA==",
+      "path": "nest/7.17.5",
+      "hashPath": "nest.7.17.5.nupkg.sha512"
     },
     "System.ClientModel/1.0.0": {
       "type": "package",

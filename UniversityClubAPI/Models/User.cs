@@ -20,8 +20,13 @@ namespace UniversityClubAPI.Models
         public string? ProfileImage { get; set; }
 
         public string? Department { get; set; }
-        public string Batch { get; set; }
+        public string? Batch { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        //relationships between user and post, comment, reaction    
+        public ICollection<Post> Posts { get; set; }
+        public ICollection<Comment> Comments { get; set; }
+        public ICollection<Reaction> Reactions { get; set; }
 
     }
 }

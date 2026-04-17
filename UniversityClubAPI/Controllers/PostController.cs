@@ -23,8 +23,11 @@ namespace UniversityClubAPI.Controllers
         public async Task<IActionResult> Create(CreatePostDto dto)
         {
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
-            var user = _context.Users.FirstOrDefault(x => x.Email == email);
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
             if (user == null) return Unauthorized();
+
+            var club = await _context.Clubs.FindAsync(dto.ClubId);
+            if (club == null) return NotFound("Club not found");
 
             var post = new Post
             {

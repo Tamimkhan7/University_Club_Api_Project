@@ -1,8 +1,10 @@
-﻿namespace UniversityClubAPI.DTOs
+﻿using UniversityClubAPI.Models;
+
+namespace UniversityClubAPI.DTOs
 {
     public class ReactDto
     {
         public int PostId { get; set; }
-        public string Type { get; set; }
+        public ReactionType Type { get; set; }
     }
 }
