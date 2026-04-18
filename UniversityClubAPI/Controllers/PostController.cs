@@ -47,8 +47,8 @@ namespace UniversityClubAPI.Controllers
         [HttpPut("update/{id}")]
         public async Task<IActionResult> Update(int id, UpdatePostDto dto)
         {
-            var email = User.FindFirst(ClaimTypes.Email)?.Value;
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
+            var email = User.FindFirst(ClaimTypes.Email)?.Value; //User means, currently logged in user
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email); //Users means, all users in database, and we are trying to find the user with the email of currently logged in user
             if (user == null) return Unauthorized();
 
             var post = await _context.Posts.FirstOrDefaultAsync(x => x.Id == id && x.UserId == user.Id);
@@ -79,10 +79,11 @@ namespace UniversityClubAPI.Controllers
             return Ok("Post deleted successfully");
         }
 
+        [Authorize]
         [HttpGet("all")]
         public async Task<IActionResult> All()
         {
-            var posts = _context.Posts
+            var posts = await _context.Posts
                 .Include(x => x.User)
                 .Include(x => x.Comments)
                 .Include(x => x.Reactions)
@@ -97,7 +98,7 @@ namespace UniversityClubAPI.Controllers
                     UserImage = p.User.ProfileImage,
                     CommentCount = p.Comments.Count,
                     ReactionCount = p.Reactions.Count
-                }).ToList();
+                }).ToListAsync();
 
             return Ok(posts);
         }
@@ -116,7 +117,9 @@ namespace UniversityClubAPI.Controllers
                 .Include(x => x.Comments)
                 .Include(x => x.Reactions)
                 .FirstOrDefaultAsync(x => x.Id == id);
+
             if (post == null) return NotFound();
+
             return Ok(post);
         }
 

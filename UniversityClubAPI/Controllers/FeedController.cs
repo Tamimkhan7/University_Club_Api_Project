@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using UniversityClubAPI.Data;
 using UniversityClubAPI.DTOs;
@@ -16,11 +17,12 @@ namespace UniversityClubAPI.Controllers
             _context = Context;
         }
 
-
+        [Authorize]
         [HttpGet("feed")]
         public async Task<IActionResult> Feed()
         {
-            var feed = await _context.Posts.Include(x => x.User)
+            var feed = await _context.Posts
+                .Include(x => x.User)
                 .Include(x => x.Comments)
                 .Include(x => x.Reactions)
                 .OrderByDescending(x => x.CreatedAt)
@@ -30,11 +32,8 @@ namespace UniversityClubAPI.Controllers
                     Content = p.Content,
                     ImageUrl = p.ImageUrl,
                     CreatedAt = p.CreatedAt,
-
-
                     UserName = p.User.Name,
                     UserImage = p.User.ProfileImage,
-
                     CommentCount = p.Comments.Count,
                     ReactionCount = p.Reactions.Count
                 }).ToListAsync();

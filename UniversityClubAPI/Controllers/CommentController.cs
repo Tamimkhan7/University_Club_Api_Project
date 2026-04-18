@@ -23,7 +23,6 @@ namespace UniversityClubAPI.Controllers
         public async Task<IActionResult> Create(CreateCommentDto dto)
         {
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
-
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
             if (user == null) return Unauthorized();
 
@@ -84,6 +83,7 @@ namespace UniversityClubAPI.Controllers
 
         }
 
+        [Authorize]
         [HttpGet("post/{postId}")]
         public async Task<IActionResult> GetComments(int postId)
         {
@@ -98,7 +98,6 @@ namespace UniversityClubAPI.Controllers
                     UserName = c.User.Name,
                     UserImage = c.User.ProfileImage,
                     CreatedAt = c.CreatedAt,
-
 
                     Replies = _context.Comments
                     .Include(r => r.User)

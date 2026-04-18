@@ -6,7 +6,7 @@ namespace UniversityClubAPI.Models
     {
         [Key]
         public int Id { get; set; }
-        public int UserId { get; set; }
+        public int UserId { get; set; } // 2 -> 2 no user sathe connected
         public User? User { get; set; }
 
         public int ClubId { get; set; }
@@ -17,8 +17,8 @@ namespace UniversityClubAPI.Models
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? UpdatedAt { get; set; }
 
-        public ICollection<Comment> Comments { get; set; }
-        public ICollection<Reaction> Reactions { get; set; }
+        public ICollection<Comment>? Comments { get; set; }
+        public ICollection<Reaction>? Reactions { get; set; }
 
     }
 }

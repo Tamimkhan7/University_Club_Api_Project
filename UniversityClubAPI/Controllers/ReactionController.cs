@@ -26,11 +26,11 @@ namespace UniversityClubAPI.Controllers
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
             if (user == null) return Unauthorized();
 
-            var existing = await _context.Reactions
+            var post = await _context.Reactions
                 .FirstOrDefaultAsync(x => x.PostId == dto.PostId && x.UserId == user.Id);
 
-            if (existing != null)
-                existing.Type = dto.Type;
+            if (post != null)
+                post.Type = dto.Type;
             else
             {
                 var reaction = new Reaction
@@ -91,6 +91,7 @@ namespace UniversityClubAPI.Controllers
             return Ok(reaction.Type);
         }
 
+        [Authorize]
         [HttpGet("all/{postId}")]
         public async Task<IActionResult> GetPostReactions(int postId)
         {
