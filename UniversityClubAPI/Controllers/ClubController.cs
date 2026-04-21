@@ -20,6 +20,7 @@ namespace UniversityClubAPI.Controllers
         }
 
         // CREATE CLUB
+        //if anyone create a club, he/she is owner of the club
         [Authorize]
         [HttpPost("create")]
         public async Task<IActionResult> Create(CreateClubDTO dto)
@@ -101,15 +102,16 @@ namespace UniversityClubAPI.Controllers
         }
 
         // GET ALL CLUBS
-
+        [Authorize]
         [HttpGet("all")]
         public async Task<IActionResult> GetAll()
         {
             var clubs = await _context.Clubs.ToListAsync();
+            if (clubs == null) return NotFound();
             return Ok(clubs);
         }
 
-        // UPDATE CLUB (NEW)
+        // UPDATE CLUB 
         [Authorize]
         [HttpPut("update/{id}")]
         public async Task<IActionResult> Update(int id, CreateClubDTO dto)
@@ -136,7 +138,7 @@ namespace UniversityClubAPI.Controllers
             return Ok(club);
         }
 
-        // DELETE CLUB (NEW)
+        // DELETE CLUB 
         [Authorize]
         [HttpDelete("delete/{id}")]
         public async Task<IActionResult> Delete(int id)
