@@ -7,19 +7,26 @@ using UniversityClubAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Controllers
-builder.Services.AddControllers().
-    AddJsonOptions(options =>
+// Controllers + JSON FIX (IMPORTANT)
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
     {
+        // enum take reaction as string instead of int 
         options.JsonSerializerOptions.Converters
-        .Add(new JsonStringEnumConverter());
+            .Add(new JsonStringEnumConverter());
+
+        //  CYCLE FIX (MAIN SOLUTION)
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+
+        // optional (pretty JSON)
+        options.JsonSerializerOptions.WriteIndented = true;
     });
 
-// Swagger
-//builder.Services.AddEndpointsApiExplorer();
-//builder.Services.AddSwaggerGen();
+// Swagger (optional)
+// builder.Services.AddEndpointsApiExplorer();
+// builder.Services.AddSwaggerGen();
 
-// JWT Authentication
+//  JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
 {
@@ -37,7 +44,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     };
 });
 
-// EF Core DB
+//  EF Core DB
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
@@ -46,12 +53,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
-//// Swagger pipeline
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
-//}
+// Swagger (optional)
+// if (app.Environment.IsDevelopment())
+// {
+//     app.UseSwagger();
+//     app.UseSwaggerUI();
+// }
 
 app.UseHttpsRedirection();
 

@@ -25,6 +25,7 @@ namespace UniversityClubAPI.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> Create(CreateClubDTO dto)
         {
+            if (dto == null) return BadRequest("Invalid request");
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
 
@@ -50,26 +51,37 @@ namespace UniversityClubAPI.Controllers
         }
 
         // JOIN CLUB
+        //ai API niye confusion ace, ai issue ta solve kora lagbe
+
         [Authorize]
         [HttpPost("join")]
         public async Task<IActionResult> Join(JoinClubDTO dto)
         {
+            if (dto == null) return BadRequest("Invalid request");
+
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email)) return Unauthorized("Invalid token"); //aita na dile oh colbe, karon ami direct login kora user ar email nicchi, then check korteci oi name email amar db te save ace kina
+
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
 
             if (user == null)
                 return NotFound("User not found");
 
-            var exists = await _context.ClubMembers
-                .AnyAsync(x => x.UserId == user.Id && x.ClubId == dto.ClubId);
+            //check club exists
+            var club = await _context.Clubs.FirstOrDefaultAsync(x => x.Id == dto.ClubId);
+            if (club == null) return NotFound("club not found");
 
-            if (exists)
-                return BadRequest("Already joined");
+            //check club member exists
+            var exists = await _context.ClubMembers.AnyAsync(x => x.UserId == user.Id && x.ClubId == dto.ClubId);
+
+            if (exists) return BadRequest("Already joined");
 
             var member = new ClubMember
             {
                 UserId = user.Id,
                 ClubId = dto.ClubId
+
             };
 
             _context.ClubMembers.Add(member);

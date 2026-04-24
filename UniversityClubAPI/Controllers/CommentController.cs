@@ -22,6 +22,7 @@ namespace UniversityClubAPI.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> Create(CreateCommentDto dto)
         {
+            if (dto == null) return BadRequest("Invalid request");
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
             if (user == null) return Unauthorized();
@@ -53,6 +54,7 @@ namespace UniversityClubAPI.Controllers
         [HttpPut("update/{id}")]
         public async Task<IActionResult> Update(int id, CreateCommentDto dto)
         {
+            if (dto == null) return BadRequest("Invalid request");
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
             if (user == null) return Unauthorized();

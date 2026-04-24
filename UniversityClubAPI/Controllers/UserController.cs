@@ -54,6 +54,7 @@ namespace UniversityClubAPI.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> Update(UpdateUserDTO model)
         {
+            if (model == null) return BadRequest("Invalid request");
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
 
             if (email == null)

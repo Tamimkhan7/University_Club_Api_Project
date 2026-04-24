@@ -22,6 +22,7 @@ namespace UniversityClubAPI.Controllers
         [HttpPost("react")]
         public async Task<IActionResult> React([FromBody] ReactDto dto)
         {
+            if (dto == null) return BadRequest("Invalid request");
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
             if (user == null) return Unauthorized();

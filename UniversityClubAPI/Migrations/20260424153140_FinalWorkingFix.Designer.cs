@@ -12,8 +12,8 @@ using UniversityClubAPI.Data;
 namespace UniversityClubAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260417175904_addReactionTypeAndOthersModelUpdate")]
-    partial class addReactionTypeAndOthersModelUpdate
+    [Migration("20260424153140_FinalWorkingFix")]
+    partial class FinalWorkingFix
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,6 +48,8 @@ namespace UniversityClubAPI.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CreatedBy");
+
                     b.ToTable("Clubs");
                 });
 
@@ -70,6 +72,10 @@ namespace UniversityClubAPI.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ClubId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("ClubMembers");
                 });
@@ -216,22 +222,47 @@ namespace UniversityClubAPI.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("UniversityClubAPI.Models.Club", b =>
+                {
+                    b.HasOne("UniversityClubAPI.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("CreatedBy")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("UniversityClubAPI.Models.ClubMember", b =>
+                {
+                    b.HasOne("UniversityClubAPI.Models.Club", null)
+                        .WithMany()
+                        .HasForeignKey("ClubId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UniversityClubAPI.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("UniversityClubAPI.Models.Comment", b =>
                 {
                     b.HasOne("UniversityClubAPI.Models.Comment", "ParentComment")
                         .WithMany("Replies")
-                        .HasForeignKey("ParentCommentId");
+                        .HasForeignKey("ParentCommentId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("UniversityClubAPI.Models.Post", "Post")
                         .WithMany("Comments")
                         .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("UniversityClubAPI.Models.User", "User")
                         .WithMany("Comments")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("ParentComment");
@@ -271,7 +302,7 @@ namespace UniversityClubAPI.Migrations
                     b.HasOne("UniversityClubAPI.Models.User", "User")
                         .WithMany("Reactions")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Post");
