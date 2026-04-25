@@ -3,16 +3,136 @@
   "WorkspaceRootPath": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\controllers\\feedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\controllers\\feedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\controllers\\reactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\controllers\\reactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\commentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\commentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\createclubdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\createclubdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\feeddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\feeddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\joinclubdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\joinclubdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\postresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\postresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\reactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\reactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\reactionresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\reactionresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\updatepostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\updatepostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\models\\club.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\models\\club.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\models\\clubmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\models\\clubmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\models\\reaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\models\\reaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\models\\reactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\models\\reactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|c:\\users\\tamim\\onedrive\\desktop\\api project\\universityclubapi\\universityclubapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D5A7D6-FAC2-46D6-B66C-202C87DEBC56}|UniversityClubAPI\\UniversityClubAPI.csproj|solutionrelative:universityclubapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,42 +150,400 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:10:06.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ClubController.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\ClubController.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Controllers\\ClubController.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\ClubController.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Controllers\\ClubController.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAuwLEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:10:01.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAuwHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:56.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FeedController.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\FeedController.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Controllers\\FeedController.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\FeedController.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Controllers\\FeedController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:52.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\PostController.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAuwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:47.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReactionController.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\ReactionController.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Controllers\\ReactionController.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\ReactionController.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Controllers\\ReactionController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAA+wHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:42.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAuwGMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:38.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CommentResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CommentResponseDto.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\CommentResponseDto.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CommentResponseDto.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\CommentResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:29.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateClubDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CreateClubDTO.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\CreateClubDTO.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CreateClubDTO.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\CreateClubDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:24.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateCommentDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CreateCommentDto.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\CreateCommentDto.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CreateCommentDto.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\CreateCommentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:19.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreatePostDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CreatePostDto.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\CreatePostDto.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CreatePostDto.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\CreatePostDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:15.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CreateUserDTO.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\CreateUserDTO.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\CreateUserDTO.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\CreateUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:10.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FeedDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\FeedDto.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\FeedDto.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\FeedDto.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\FeedDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:06.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "JoinClubDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\JoinClubDTO.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\JoinClubDTO.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\JoinClubDTO.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\JoinClubDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:09:02.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:58.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PostResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\PostResponseDto.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\PostResponseDto.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\PostResponseDto.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\PostResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:53.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReactDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\ReactDto.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\ReactDto.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\ReactDto.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\ReactDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:49.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReactionResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\ReactionResponseDto.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\ReactionResponseDto.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\ReactionResponseDto.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\ReactionResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:44.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\RegisterDTO.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\RegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:38.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UpdatePostDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\UpdatePostDto.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\UpdatePostDto.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\UpdatePostDto.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\UpdatePostDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:34.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\UpdateUserDTO.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\DTOs\\UpdateUserDTO.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\DTOs\\UpdateUserDTO.cs",
+              "RelativeToolTip": "UniversityClubAPI\\DTOs\\UpdateUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:29.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Helpers\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Helpers\\JwtHelper.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Helpers\\JwtHelper.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Helpers\\JwtHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:24.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\Comment.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:09.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Models\\Post.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\Post.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Models\\Post.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T05:59:32.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Reaction.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\Reaction.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Models\\Reaction.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\Reaction.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Models\\Reaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:08:01.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ReactionType.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\ReactionType.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Models\\ReactionType.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\ReactionType.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Models\\ReactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:07:57.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\appsettings.Development.json",
+              "RelativeToolTip": "UniversityClubAPI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-25T07:07:49.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\appsettings.json",
+              "RelativeToolTip": "UniversityClubAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-25T07:07:47.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ClubMember.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\ClubMember.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Models\\ClubMember.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\ClubMember.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Models\\ClubMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T06:53:00.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Club.cs",
+              "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\Club.cs",
+              "RelativeDocumentMoniker": "UniversityClubAPI\\Models\\Club.cs",
+              "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\Club.cs",
+              "RelativeToolTip": "UniversityClubAPI\\Models\\Club.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T06:51:34.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Program.cs",
               "RelativeDocumentMoniker": "UniversityClubAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Program.cs",
               "RelativeToolTip": "UniversityClubAPI\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwEUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T19:06:12.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T19:06:12.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 29,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\User.cs",
               "RelativeDocumentMoniker": "UniversityClubAPI\\Models\\User.cs",
               "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Models\\User.cs",
               "RelativeToolTip": "UniversityClubAPI\\Models\\User.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBQAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA3wCAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T19:06:09.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T19:06:09.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "UniversityClubAPI\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Tamim\\OneDrive\\Desktop\\API Project\\UniversityClubAPI\\UniversityClubAPI\\Data\\AppDbContext.cs",
               "RelativeToolTip": "UniversityClubAPI\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAGQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T19:06:05.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T19:06:05.127Z"
             }
           ]
         }

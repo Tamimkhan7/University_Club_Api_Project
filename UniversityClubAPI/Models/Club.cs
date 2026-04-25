@@ -11,5 +11,8 @@ namespace UniversityClubAPI.Models
         public string? Description { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        //public ICollection<ClubMember>? Members { get; set; } = new List<ClubMember>();
+        //public ICollection<Post>? Posts { get; set; } = new List<Post>();
     }
 }
